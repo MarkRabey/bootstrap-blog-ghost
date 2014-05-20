@@ -1,0 +1,12 @@
+{{!< default}}
+<article class="post container">
+  {{#post}}
+    {{#contentFor "metaTitle"}}{{title}} | {{@blog.title}}{{/contentFor}}
+     <header class="page-header">
+      <h1>{{title}}</h1>
+    </header>
+    <section>
+      {{content}}
+    </section>
+  {{/post}}
+</article>

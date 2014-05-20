@@ -1,0 +1,25 @@
+.transition(@property:left,@duration: 0.3s,@timing-function:ease-in-out,@delay: 0s) {
+	-webkit-transition: @property @duration @timing-function @delay;
+	-moz-transition: @property @duration @timing-function @delay;
+	-o-transition: @property @duration @timing-function @delay;
+	transition: @property @duration @timing-function @delay;
+}
+
+.border-radius(@radius:4px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.background-color(@r,@b,@g,@a) {
+	background-color: rgb(@r, @b, @g);
+	background-color: rgba(@r, @b, @g, @a);
+}
+
+.position(@top,@right,@bottom,@left) {
+	top: @top;
+	right: @right;
+	bottom: @bottom;
+	left: @left;
+}

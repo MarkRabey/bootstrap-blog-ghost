@@ -1,0 +1,60 @@
+{{!< default}}
+{{#contentFor "metaTitle"}}{{@blog.title}} | {{@blog.description}}{{/contentFor}}
+<header id="main-header">
+	<div class="header-main">
+		<div class="header-main-inner">
+			<div class="header-main-content">
+				<h1 class="blog-title"><a href="/">{{@blog.title}}</a></h1>
+				<hr class="divider-primary">
+				<p class="blog-description">{{@blog.description}}</p>
+				<hr class="divider-secondary">
+				<div class="header-social">
+					<ul>
+						<li><a href="http://twitter.com/WideAsleepDad" target="_blank"><span class="fa fa-twitter"></span></a></li>
+						<li><a href="http://github.com/MarkRabey" target="_blank"><span class="fa fa-github"></span></a></li>
+						<li><a href="http://facebook.com/markrabey1983" target="_blank"><span class="fa fa-facebook"></span></a></li>
+						<li><a href="mailto:hello@markrabey"><span class="fa fa-envelope"></span></a></li>
+					</ul>
+				</div>
+				<div class="header-links">
+					<ul>
+						<li><a href="/" class="btn btn-outline btn-lg">Blog</a></li>
+						<li><a href="/about" class="btn btn-outline btn-lg">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-overlay"></div>
+	</div>
+</header>
+
+<section class="container">
+	{{#foreach posts}}
+		<article role="article" itemscope itemtype="http://schema.org/BlogPosting" class="post">
+			<header>
+				<h2><a href="{{url}}">{{{title}}}</a></h2>
+			</header>
+			<p>
+				{{excerpt}}&hellip;
+			</p>
+			<section class="post-meta">
+				<time itemprop="dateCreated" datetime="{{date format='MMMM DD, YYYY'}}">{{date format='MMMM DD, YYYY'}}</time> &bull; {{tags prefix="on "}}
+			</section>
+		</article>
+	{{/foreach}}
+</section>
+
+<section class="container">
+	{{pagination}}
+</section>
+{{!-- <section id="pagination" class="container">
+	<ul class="pagination">
+		<li class="disabled"><span>&laquo;</span></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+</section> --}}

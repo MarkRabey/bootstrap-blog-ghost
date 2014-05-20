@@ -1,0 +1,17 @@
+{{!< default}}
+{{#contentFor "metaTitle"}}Posts on {{tag.name}} | {{@blog.title}}{{/contentFor}}
+<section class="container">
+	{{#foreach posts}}
+		<article role="article" itemscope itemtype="http://schema.org/BlogPosting" class="post">
+			<header>
+				<h2><a href="{{url}}">{{{title}}}</a></h2>
+			</header>
+			<p>
+				{{excerpt}}&hellip;
+			</p>
+			<section class="post-meta">
+				<time itemprop="dateCreated" datetime="{{date format='MMMM DD, YYYY'}}">{{date format='MMMM DD, YYYY'}}</time> &bull; {{tags prefix="on "}}
+			</section>
+		</article>
+	{{/foreach}}
+</section>

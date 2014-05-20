@@ -1,0 +1,15 @@
+{{!< default}}
+<article role="article" itemscope itemtype="http://schema.org/BlogPosting" class="post container">
+  {{#post}}
+    {{#contentFor "metaTitle"}}{{title}} | {{@blog.title}}{{/contentFor}}
+     <header class="page-header">
+      <div class="post-meta">
+        <time itemprop="dateCreated" datetime="{{date format='MMMM DD, YYYY'}}">{{date format='MMMM DD, YYYY'}}</time> &bull; {{tags prefix="on "}}
+      </div>
+      <h1>{{title}}</h1>
+    </header>
+    <section>
+      {{content}}
+    </section>
+  {{/post}}
+</article>

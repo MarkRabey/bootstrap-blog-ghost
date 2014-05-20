@@ -26,11 +26,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/" class="navbar-brand">{{@blog.title}}</a>
+        <a href="{{@blog.url}}" class="navbar-brand">
+          {{#if @blog.logo}}<img src="{{@blog.logo}}" alt="{{@blog.title}}" />{{/if}}
+          {{@blog.title}}
+        </a>
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/">Blog</a></li>
+          <li><a href="{{@blog.url}}">Blog</a></li>
           <li><a href="/about">About</a></li>
         </ul>
       </div>

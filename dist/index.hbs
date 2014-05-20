@@ -1,10 +1,11 @@
 {{!< default}}
 {{#contentFor "metaTitle"}}{{@blog.title}} | {{@blog.description}}{{/contentFor}}
-<header id="main-header">
+<header id="main-header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
 	<div class="header-main">
 		<div class="header-main-inner">
 			<div class="header-main-content">
-				<h1 class="blog-title"><a href="/">{{@blog.title}}</a></h1>
+				{{#if @blog.logo}}<img src="{{@blog.logo}}" alt="{{@blog.title}}" />{{/if}}
+				<h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 				<hr class="divider-primary">
 				<p class="blog-description">{{@blog.description}}</p>
 				<hr class="divider-secondary">
@@ -18,7 +19,7 @@
 				</div>
 				<div class="header-links">
 					<ul>
-						<li><a href="/" class="btn btn-outline btn-lg">Blog</a></li>
+						<li><a href="{{@blog.url}}" class="btn btn-outline btn-lg">Blog</a></li>
 						<li><a href="/about" class="btn btn-outline btn-lg">About</a></li>
 					</ul>
 				</div>

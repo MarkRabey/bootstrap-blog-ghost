@@ -45,96 +45,101 @@ a:hover {
   transition: top 1s ease 0s;
   opacity: 0.9;
 }
+#navigation.navbar-fixed-top img {
+  -webkit-transition: top 1s ease 0s;
+  -moz-transition: top 1s ease 0s;
+  -o-transition: top 1s ease 0s;
+  transition: top 1s ease 0s;
+  top: -100px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #d5d5d5;
+  border-top: none;
+  margin-right: 15px;
+}
+#navigation.navbar-fixed-top .navbar-brand {
+  vertical-align: top;
+}
 /* Header */
-body.home-template,
-body.archive-template {
+body.home-template {
   /* Navigation */
   /* Homepage Article List */
 }
-body.home-template #navigation.navbar-fixed-top,
-body.archive-template #navigation.navbar-fixed-top {
+body.home-template #navigation.navbar-fixed-top {
   top: -100px;
 }
-body.home-template #navigation.navbar-show-fixed,
-body.archive-template #navigation.navbar-show-fixed {
+body.home-template #navigation.navbar-show-fixed {
   top: 0;
 }
-body.home-template header#main-header,
-body.archive-template header#main-header {
-  height: 300px;
+body.home-template #navigation.navbar-show-fixed img {
+  top: 15px;
+}
+body.home-template header#main-header {
+  height: 400px;
   text-align: center;
-  background: #dedede url('../images/blog-cover.jpg') no-repeat fixed;
+  background-color: #dedede;
   background-size: cover;
   color: #fff;
 }
-body.home-template header#main-header a,
-body.archive-template header#main-header a {
+body.home-template header#main-header a {
   color: #fff;
 }
-body.home-template header#main-header a:hover,
-body.archive-template header#main-header a:hover {
+body.home-template header#main-header a:hover {
   color: #e25440;
   text-decoration: none;
 }
-body.home-template header#main-header .header-main,
-body.archive-template header#main-header .header-main {
+body.home-template header#main-header .header-main {
   display: table;
   width: 100%;
   height: 100%;
 }
-body.home-template header#main-header .header-main .header-main-inner,
-body.archive-template header#main-header .header-main .header-main-inner {
+body.home-template header#main-header .header-main .header-main-inner {
   display: table-cell;
   vertical-align: middle;
   position: relative;
   z-index: 800;
   padding: 0 60px;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content {
   max-width: 650px;
   margin: 0 auto;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content hr,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content hr {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content img {
+  max-height: 120px;
+  margin-top: 15px;
+  border: 1px solid #eeeeee;
+}
+body.home-template header#main-header .header-main .header-main-inner .header-main-content hr {
   margin: 20px auto;
   border-top: 1px solid #ffffff;
   border-color: rgba(255, 255, 255, 0.15);
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content hr.divider-primary,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content hr.divider-primary {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content hr.divider-primary {
   width: 50%;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content hr.divider-secondary,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content hr.divider-secondary {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content hr.divider-secondary {
   width: 15%;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul {
   padding: 0;
   list-style: none;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul li,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul li {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul li {
   display: inline-block;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul li a,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul li a {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-social ul li a {
   display: block;
   font-size: 1.5em;
   padding: 5px;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul {
   padding: 0;
   list-style: none;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li {
   display: inline-block;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li .btn-outline,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li .btn-outline {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li .btn-outline {
   color: #fff;
   border-color: #fff;
   -webkit-transition: all 0.3s ease 0s;
@@ -142,13 +147,11 @@ body.archive-template header#main-header .header-main .header-main-inner .header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li .btn-outline:hover,
-body.archive-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li .btn-outline:hover {
+body.home-template header#main-header .header-main .header-main-inner .header-main-content .header-links ul li .btn-outline:hover {
   color: #e25440;
   border-color: #e25440;
 }
-body.home-template header#main-header .header-main .header-overlay,
-body.archive-template header#main-header .header-main .header-overlay {
+body.home-template header#main-header .header-main .header-overlay {
   display: block;
   position: absolute;
   z-index: 0;
@@ -156,32 +159,26 @@ body.archive-template header#main-header .header-main .header-overlay {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 300px;
+  height: 400px;
   background-color: #444444;
   background-color: rgba(68, 68, 68, 0.6);
 }
-body.home-template article,
-body.archive-template article {
+body.home-template article {
   color: #808080;
 }
-body.home-template article header h2 a,
-body.archive-template article header h2 a {
+body.home-template article header h2 a {
   color: #666666;
 }
-body.home-template article header h2 a:hover,
-body.archive-template article header h2 a:hover {
+body.home-template article header h2 a:hover {
   color: #e25440;
 }
-body.home-template #pagination,
-body.archive-template #pagination {
+body.home-template #pagination {
   border-bottom: 1px solid #eeeeee;
 }
-body.home-template #pagination li a,
-body.archive-template #pagination li a {
+body.home-template #pagination li a {
   color: #e25440;
 }
-body.home-template #pagination li.active a,
-body.archive-template #pagination li.active a {
+body.home-template #pagination li.active a {
   color: #fff;
   background-color: #e25440;
   border-color: #cf3520;

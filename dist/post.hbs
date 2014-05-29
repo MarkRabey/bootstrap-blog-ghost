@@ -3,7 +3,7 @@
   {{#post}}
     {{#contentFor "metaTitle"}}{{title}} | {{@blog.title}}{{/contentFor}}
     {{#contentFor "metaDescription"}}{{excerpt}}&hellip;{{/contentFor}}
-    {{#contentFor "metaKeywords"}}{{tags}}{{#if meta_keywords}}, {{meta_keywords}}{{else}}, {{@blog.title}},{{@blog.description}}{{/if}}{{/contentFor}}
+    {{#contentFor "metaKeywords"}}{{tags autolink="false"}}{{#if meta_keywords}}, {{meta_keywords}}{{else}}, {{@blog.title}},{{@blog.description}}{{/if}}{{/contentFor}}
 
      <header class="page-header">
       <div class="post-meta">

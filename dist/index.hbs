@@ -1,5 +1,8 @@
 {{!< default}}
 {{#contentFor "metaTitle"}}{{@blog.title}} | {{@blog.description}}{{/contentFor}}
+{{#contentFor "metaDescription"}}{{meta_description}}{{/contentFor}}
+{{#contentFor "metaKeywords"}}{{#if meta_keywords}}{{meta_keywords}}{{else}}{{@blog.title}},{{@blog.description}}{{/if}}{{/contentFor}}
+
 <header id="main-header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
 	<div class="header-main">
 		<div class="header-main-inner">

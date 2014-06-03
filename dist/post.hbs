@@ -7,11 +7,13 @@
 
      <header class="page-header">
       <div class="post-meta">
-        <time itemprop="dateCreated" datetime="{{date}}">{{date published_at timeago="true"}}</time> &bull; {{tags prefix="on "}}
+        <time itemprop="datePublished" datetime="{{date}}">
+          Published {{date published_at timeago="true"}}
+        </time> | {{tags}}
       </div>
-      <h1>{{title}}</h1>
+      <h1 itemprop="headline">{{title}}</h1>
     </header>
-    <section>
+    <section itemprop="articleBody">
       {{content}}
     </section>
   {{/post}}

@@ -36,13 +36,13 @@
 	{{#foreach posts}}
 		<article role="article" itemscope itemtype="http://schema.org/BlogPosting" class="post">
 			<header>
-				<h2><a href="{{url}}">{{{title}}}</a></h2>
+				<h2 itemprop="headline"><a href="{{url}}">{{{title}}}</a></h2>
 			</header>
-			<p>
+			<p itemprop="description">
 				{{excerpt}}&hellip;
 			</p>
 			<section class="post-meta">
-				<time itemprop="dateCreated" datetime="{{date}}">{{date published_at timeago="true"}}</time> &bull; {{tags prefix="on "}}
+				<time itemprop="datePublished" datetime="{{date}}">{{date published_at timeago="true"}}</time> | {{tags}}
 			</section>
 		</article>
 	{{/foreach}}
